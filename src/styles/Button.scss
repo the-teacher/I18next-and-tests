@@ -1,3 +1,5 @@
+@use "sass:color";
+
 .button {
   padding: 10px 20px;
   border-radius: 4px;
@@ -7,8 +9,10 @@
   transition: all 0.3s ease;
   background-color: #4a90e2;
   color: white;
+  text-decoration: none;
+  display: inline-block;
 
   &:hover {
-    background-color: darken(#4a90e2, 10%);
+    background-color: color.adjust(#4a90e2, $lightness: -10%);
   }
 }

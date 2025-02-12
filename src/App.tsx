@@ -1,9 +1,15 @@
-import React from "react";
+import { BrowserRouter } from "react-router-dom";
 import "./i18n/config";
-import { Hello } from "./components/Hello";
+import { Navigation } from "./components/Navigation";
+import { AppRouter } from "./router";
 
-function App() {
-  return <Hello />;
-}
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Navigation />
+      <AppRouter />
+    </BrowserRouter>
+  );
+};
 
 export default App;
