@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import "../styles/Button.scss";
 
 export const Hello = () => {
   const { t, i18n } = useTranslation();
@@ -11,14 +12,7 @@ export const Hello = () => {
   return (
     <div style={{ textAlign: "center", marginTop: "50px" }}>
       <h1>{t("Hello World")}</h1>
-      <button
-        onClick={toggleLanguage}
-        style={{
-          padding: "10px 20px",
-          fontSize: "16px",
-          cursor: "pointer",
-        }}
-      >
+      <button onClick={toggleLanguage} className="button">
         Switch to {i18n.language === "en" ? "Russian" : "English"}
       </button>
     </div>
