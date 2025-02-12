@@ -1,0 +1,17 @@
+name: Vite_I18next
+
+services:
+  node:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      HISTFILE: /root/log/.history
+    ports:
+      - 4000:4000
+    volumes:
+      - ./:/app
+      - /app/node_modules
+      - ./tmp/.history:/root/log/.history
+    working_dir: /app
+    command: sleep infinity

@@ -1,0 +1,27 @@
+{
+  "name": "vite_i18next",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "i18next": "24.2.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-i18next": "14.0.5",
+    "react-router": "6.29.0",
+    "react-router-dom": "6.29.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "typescript": "5.7.3",
+    "vite": "6.1.0"
+  },
+  "packageManager": "yarn@4.6.0+sha512.5383cc12567a95f1d668fbe762dfe0075c595b4bfff433be478dbbe24e05251a8e8c3eb992a986667c1d53b6c3a9c85b8398c35a960587fbd9fa3a0915406728"
+}
