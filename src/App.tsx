@@ -4,8 +4,15 @@ import { Navigation } from "./components/Navigation";
 import { AppRouter } from "./router";
 
 const App = () => {
+  // https://reactrouter.com/6.29.0/upgrading/future#v7_starttransition
+  // https://reactrouter.com/6.29.0/upgrading/future#v7_relativesplatpath
   return (
-    <BrowserRouter>
+    <BrowserRouter
+      future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true,
+      }}
+    >
       <Navigation />
       <AppRouter />
     </BrowserRouter>
