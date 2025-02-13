@@ -3,9 +3,11 @@ import { initReactI18next } from "react-i18next";
 import en from "./locales/en.json";
 import ru from "./locales/ru.json";
 
+const defaultLanguage = import.meta.env.VITE_DEFAULT_LANGUAGE || "en";
+
 i18n.use(initReactI18next).init({
-  fallbackLng: "en",
-  lng: "en",
+  fallbackLng: defaultLanguage,
+  lng: defaultLanguage,
   resources: {
     en,
     ru,
